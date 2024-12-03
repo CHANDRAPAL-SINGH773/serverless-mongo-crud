@@ -10,7 +10,7 @@ authorName: 'Serverless, Inc.'
 authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
 -->
 
-# Serverless Framework Node HTTP API on AWS
+# 🚀 Serverless CRUD API with AWS Lambda, MongoDB & Node.js 🌐
 
 This template demonstrates how to make a simple HTTP API with Node.js running on AWS Lambda and API Gateway using the Serverless Framework.
 
@@ -25,7 +25,7 @@ provider:
   runtime: nodejs20.x
   region: ap-south-1
   environment:
-      MONGODB_URI: 'mongodb+srv://db_username:db_password@aws-lambda.fm3hq.mongodb.net/?retryWrites=true&w=majority&appName=aws-lambda' Your url will look something like this just place your db user nad password
+      MONGODB_URI: 'mongodb+srv://db_username:db_password@aws-lambda.fm3hq.mongodb.net/?retryWrites=true&w=majority&appName=aws-lambda' Your url will look something like this just place your db user and password
 
 plugins:
   - serverless-offline
