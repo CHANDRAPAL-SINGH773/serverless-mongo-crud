@@ -8,7 +8,7 @@ provider:
   runtime: nodejs20.x
   region: ap-south-1
   environment:
-      MONGODB_URI: 'mongodb+srv://projectninjatech:TcimMuOjT7zXm837@aws-lambda.fm3hq.mongodb.net/?retryWrites=true&w=majority&appName=aws-lambda'
+      MONGODB_URI: 'mongodb+srv://db_username:db_password@aws-lambda.fm3hq.mongodb.net/?retryWrites=true&w=majority&appName=aws-lambda'
 
 plugins:
   - serverless-offline

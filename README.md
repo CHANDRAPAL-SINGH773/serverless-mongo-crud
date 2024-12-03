@@ -18,57 +18,6 @@ This template does not include any kind of persistence (database). For more adva
 
 ## Usage
 
-## serverless.yml structure
-```
-provider:
-  name: aws
-  runtime: nodejs20.x
-  region: ap-south-1
-  environment:
-      MONGODB_URI: 'mongodb+srv://db_username:db_password@aws-lambda.fm3hq.mongodb.net/?retryWrites=true&w=majority&appName=aws-lambda' Your url will look something like this just place your db user and password
-
-plugins:
-  - serverless-offline
-
-
-functions:
-  testConnection:
-    handler: handler.testConnection
-    events:
-      - http:
-          path: test
-          method: get
-
-  createUser:
-    handler: handler.createUser
-    events:
-      - http:
-          path: users
-          method: post
-
-  getUser:
-    handler: handler.getUser
-    events:
-      - http:
-          path: users/{id}
-          method: get
-
-  updateUser:
-    handler: handler.updateUser
-    events:
-      - http:
-          path: users/{id}
-          method: put
-
-  deleteUser:
-    handler: handler.deleteUser
-    events:
-      - http:
-          path: users/{id}
-          method: delete
-
-```
-
 ### Deployment
 
 In order to deploy the example, you need to run the following command:
