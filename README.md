@@ -22,7 +22,7 @@ This template does not include any kind of persistence (database). For more adva
 
 In order to deploy the example, you need to run the following command:
 
-**Note - Please replace the MONGODB_URI with your uri in environment in serverless.yml file**
+**Note - Please replace the MONGODB_URI with your uri under environment in serverless.yml file**
 
 ```
 serverless deploy
