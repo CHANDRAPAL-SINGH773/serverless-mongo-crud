@@ -20,7 +20,7 @@ jobs:
           node-version: '18'   # match your local node version
 
       - name: Install Serverless Framework
-        run: npm install -g serverless
+        run: npm install -g serverless@3
 
       # === Build Phase ===
       - name: Install project dependencies
