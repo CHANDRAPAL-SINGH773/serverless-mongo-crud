@@ -1,18 +1,17 @@
-# "org" ensures this Service is used with the correct Serverless Framework Access Key.
-org: imranpnt
-# "service" is the name of this project. This will also be added to your AWS resource names.
+# No org field (skip Dashboard login)
 service: nodejs-api
+
+frameworkVersion: '4'   # recommended if you're using Serverless v4
 
 provider:
   name: aws
   runtime: nodejs20.x
-  region: ap-south-1
+  region: us-east-1
   environment:
-      MONGODB_URI: 'mongodb+srv://db_username:db_password@aws-lambda.fm3hq.mongodb.net/?retryWrites=true&w=majority&appName=aws-lambda'
+    MONGODB_URI: 'mongodb+srv://db_username:db_password@aws-lambda.fm3hq.mongodb.net/?retryWrites=true&w=majority&appName=aws-lambda'
 
 plugins:
   - serverless-offline
-
 
 functions:
   testConnection:
@@ -49,3 +48,7 @@ functions:
       - http:
           path: users/{id}
           method: delete
+
+# add these two lines to completely opt-out of serverless dashboard
+org: null
+app: null
