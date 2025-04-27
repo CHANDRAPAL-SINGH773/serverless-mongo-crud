@@ -1,7 +1,7 @@
 # No org field (skip Dashboard login)
 service: nodejs-api
 
-frameworkVersion: '4'   # recommended if you're using Serverless v4
+frameworkVersion: '3'   # recommended if you're using Serverless v4
 
 provider:
   name: aws
